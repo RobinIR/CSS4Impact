@@ -1,0 +1,7 @@
+bs4
+requests
+trafilatura
+PyPDF2
+pdfkit
+selenium
+spacy

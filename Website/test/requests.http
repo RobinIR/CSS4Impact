@@ -1,0 +1,165 @@
+
+//USED FOR TEST TO CHECK CONNECTION TO BACKEND!
+
+//GET http://localhost:1337/products: Retrieves the products from a local server.
+GET http://localhost:1337/products
+
+
+//GET https://dummyjson.com/products: Retrieves the products from a dummy JSON API.
+###
+GET https://dummyjson.com/products
+
+//Retrieves data for collection ID 1.
+###
+Get http://localhost:8000/collection/1
+
+// Creates a new collection with the specified username and password in the request body.
+###
+POST http://localhost:8000/collection/
+Content-Type: application/json
+
+{
+    "username": "Jule",
+    "password": "xyzuvwab"
+}
+
+// Updates the collection with ID 1 using the specified username and password in the request body.
+###
+PUT http://localhost:8000/collection/1
+Content-Type: application/json
+
+{
+    "username": "Jule",
+    "password": "xyzuvwab"
+}
+
+//Deletes the collection with ID 1.
+###
+DELETE http://localhost:8000/collection/1
+
+// Retrieves data from the collection endpoint based on the English language.
+###
+Get http://localhost:8000/collection/path/English
+
+// Retrieves data from the collection endpoint based on the AZB language.
+###
+GET http://localhost:8000/collection/path/AZB
+
+//Retrieves data for a specific category.
+###
+GET http://localhost:8000/category/clhz26lno0002pk330l5d6bzh
+
+//Creates a new collection with the specified data in the request body.
+###
+POST http://localhost:8000/collection/path
+content-type: application/json
+
+{
+    "title": "Samplw A",
+    "DatePublication": "2023-03-24",
+    "Language": "AZB",
+    "Priority": "High",
+    "Actors": "John, Jane, Jack",
+    "Location": "New York",
+    "TimeFrame": "2023-04-01T10:00:00+00:00",
+    "LocalPath": "/path/to/project",
+    "KeyWords": [
+      "key1",
+      "key2",
+      "key3"
+    ],
+    "OptionalField": null
+}
+
+//Retrieves all articles.
+###
+GET http://localhost:8000/articles
+
+
+//Retrieves the article with the specified ID.
+###
+GET http://localhost:8000/articles/clhz26lno0002pk330l5d6bzh
+
+
+//Retrieves articles filtered by the English language.
+###
+GET http://localhost:8000/articles/language/English
+
+//Retrieves articles filtered by priority 1.
+###
+GET http://localhost:8000/articles/priority/1
+
+// Retrieves articles using query parameters for language and priority.
+###
+GET http://localhost:8000/articles?language=English&priority=1
+
+//Retrieves all collections.
+###
+GET http://localhost:8000/collection
+
+//Retrieves data for the Azerbaijani category.
+###
+GET http://localhost:8000/category/path/Azerbaijani
+
+//Retrieves the count of records for the Azerbaijani language.
+###
+Get http://localhost:8000/count_records/Azerbaijani
+
+//Retrieves the count of all records.
+###
+Get http://localhost:8000/count_records
+
+//Retrieves data for the Azerbaijani category.
+###
+GET http://localhost:8000/category/path/Azerbaijani
+
+//Filters records based on the specified criteria in the request body.
+###
+POST http://localhost:8000/filter_records
+content-type: application/json
+
+{
+  "Language": "Azerbaijani",
+  "Category": [
+        "Cash benefits"
+      ]
+}
+
+//Filters records with pagination.
+###
+POST http://localhost:8000/filter_records?page=1&page_size=5
+content-type: application/json
+
+{
+  "Language": "Azerbaijani"
+}
+
+###
+POST http://localhost:8000/filter_records
+content-type: application/json
+
+{
+  "Language": "Azerbaijani",
+  "Actors": [
+        "Habelə"
+      ],
+      "Category": [
+        "Cash benefits"
+      ]
+}
+
+###
+POST http://localhost:8000/filter_records
+content-type: application/json
+
+{
+  "Priority": 7.4
+}
+
+//Retrieves data for the Georgian language sorted by priority.
+###
+GET http://localhost:8000/collection/priority/Georgian
+
+//Retrieves data for the Azerbaijani category.
+###
+GET http://localhost:8000/category/path/Azerbaijani

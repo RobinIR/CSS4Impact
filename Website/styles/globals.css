@@ -1,0 +1,31 @@
+/*This file uses Tailwind CSS to style the website*/
+/*The following three lines import the pre-defined Tailwind styles for the base, components, and utilities.*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Theme */
+/*The following lines define CSS custom properties (also called CSS variables) that can be reused throughout the file.*/
+:root {
+--background-color: white;
+--link-color: darkred;
+--text-color: black;
+}
+
+/*The following lines style the body element and apply the custom CSS properties defined above.*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: var(--background-color);
+color: var(--text-color);
+}
+
+/*The following lines style the hyperlink element and apply the custom CSS properties defined above.*/
+a {
+color: var(--link-color);
+text-decoration: none;
+}
+
+/*The following lines style the hyperlink element when it is in focus or hovered over, and apply the custom CSS properties defined above.*/
+a:focus, a:hover {
+text-decoration: underline;
+}

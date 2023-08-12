@@ -1,0 +1,44 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:postgres@database/postgres"
+}
+
+// generator
+generator client {
+  provider             = "prisma-client-py"
+  recursive_type_depth = -1
+}
+
+// Sample Schema for tesing, will allow app to run with Prisma after first install
+model Collection {
+  id         Int       @id @default(autoincrement())
+  title           String?
+  DatePublication String?
+  Language        String?
+  Priority        Float?
+  Url             String?
+  Actors          String[]
+  Location        String[]
+  Organizations   String[]
+  IDPMatchedKeywords String[]
+  CatagoryMatchedKeywords String[]
+  LocalPath       String?
+  KeyWords        String []
+  Category        String []
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+}
+
+
+//Change here
+model category {
+  id         Int       @id @default(autoincrement())
+  category   String?
+  idp        String []
+  keywords   String []
+  language   String?
+  updated_at DateTime  @updatedAt
+}
+
+
+

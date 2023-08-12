@@ -1,0 +1,1 @@
+db_save(article_url,title, date,language, category_name, keyword, search_keyword)
