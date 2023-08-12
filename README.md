@@ -11,9 +11,6 @@ The objective of this project is to gather relevant data from various sources th
 - Database: PostgreSQL, Prisma, Docker
 - Website: React.js, Next.js
 
-Certainly, you can provide an overall installation process in the main readme file that guides users through setting up the different components of your project. Here's how you could structure the installation instructions:
-
----
 
 # Project Installation Guide
 
@@ -36,9 +33,6 @@ Proceed to the `Database` folder and refer to the [Database](./Database/README.m
 ## 3. Website
 
 Finally, head over to the `Website` folder and review the [Website](./Website/README.md) for details on setting up the React.js and Next.js application. This application will provide a user-friendly interface to access and interact with the collected data.
-
-
----
 
 
 ## Conclusion
