@@ -7,24 +7,24 @@ The objective of this project is to gather relevant data from various sources th
 
 ## Technologies Used
 
-- Scrappers : Python, Selenium, BeautifulSoup4
+- Scrapers : Python, Selenium, BeautifulSoup4
 - Database: PostgreSQL, Prisma, Docker
 - Website: React.js, Next.js
 
 
 # Project Installation Guide
 
-This guide provides step-by-step instructions to set up the different components of the project: **Website**, **Scrappers**, and **Database**. Each component has its own dedicated folder with a corresponding readme file that contains detailed installation instructions.
+This guide provides step-by-step instructions to set up the different components of the project: **Website**, **Scrapers**, and **Database**. Each component has its own dedicated folder with a corresponding readme file that contains detailed installation instructions.
 
 Before you begin, ensure you have the following prerequisites installed:
 
-- Python (for Scrappers)
+- Python (for Scrapers)
 - Node.js (for Website)
 - Docker (for Database)
 
-## 1. Scrappers
+## 1. Scrapers
 
-Navigate to the `Scrappers` folder and follow the instructions in the [Scrappers](./Web Scrappers/README.md) to install the web scraping components using Python, Selenium, and BeautifulSoup4. These components are responsible for extracting data from various sources.
+Navigate to the `Scrapers` folder and follow the instructions in the [Scrapers](./Web Scrapers/README.md) to install the web scraping components using Python, Selenium, and BeautifulSoup4. These components are responsible for extracting data from various sources.
 
 ## 2. Database
 

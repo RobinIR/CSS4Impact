@@ -1,6 +1,6 @@
-# Web Crawler
+# Web Scraper
 
-This is a web crawler project that extracts information from various websites. It is built to scrape data from specific websites and perform tasks such as text and date extraction and natural language processing.
+This is a web scraper project that extracts information from various websites. It is built to scrape data from specific websites and perform tasks such as text and date extraction and natural language processing.
 ___
 
 # Installation
